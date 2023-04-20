@@ -65,5 +65,6 @@ export async function getStaticProps(){
  
     return {
         props: { projects },
+        revalidate: 1 // 데이터 변경이 있으면 갱신 1초 마다 - 갱신 주기 설정 가능
     }
 }
