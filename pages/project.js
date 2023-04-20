@@ -12,7 +12,7 @@ export default function Projects({projects}){
     return (
         <>
             <Layout>
-                <div className="flex flex-col items-center justify-center min-h-screen px-5 py-10 mb-10 px-6">
+                <div className="flex flex-col items-center justify-items-center min-h-screen px-5 py-10 mb-10 px-6">
                     <Head>
                         <title>종혁이 프로젝트</title>
                         
@@ -20,7 +20,7 @@ export default function Projects({projects}){
                     </Head>
                     <h1 className="hover:text-slate-400/80 text-4xl font-bold sm:text-6xl">프로젝트 :<span className="pl-4 text-blue-500">{projects.results.length}</span></h1>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-4 py-10 m-6 gap-8 w-full">
+                    <div className="grid grid-cols-1 md:grid-cols-4 py-10 justify-items-center gap-8 w-full">
                         {projects.results.map((aProject) =>(
                             <ProjectItem key={aProject.id} data={aProject} />
                         ))}

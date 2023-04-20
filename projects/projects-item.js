@@ -47,7 +47,7 @@ export default function ProjectItem({data}){
                 <h1 className="mt-4 text-xl">{description}</h1>
                 <a className="hover:text-slate-400/80" href={githubLink}>깃허브 즉시이동</a>
                 <a className="hover:text-slate-400/80" href={youtubeLink}>유투부 즉시이동</a>
-                <p className="my-1 text-lg">작업기간 : {start} ~ {end} | 총 {calcPeriod(start, end) }일</p>
+                <p className="my-1 text-lg">작업기간 : {start} ~ {end} | 총 {calcPeriod(start, end)}일</p>
                 <div className="flex items-start mt-2">
                     {tags.map((aTag)=>(
                             <h1 className={`px-2 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 w-30`} key={aTag.id}>{aTag.name}</h1>
